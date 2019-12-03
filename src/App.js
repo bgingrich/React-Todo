@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import "./components/TodoComponents/Todo.css"
 
 class App extends React.Component {
   constructor() {
@@ -59,7 +60,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className = "container">
         <h1>Billy's Todo List</h1>
         <TodoList
           handleToggleComplete={this.toggleTodoComplete}
